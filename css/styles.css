@@ -36,7 +36,6 @@ h1{
 	letter-spacing: .05em;
 }  	
 
-
 h2 {
 	font-size: 1.8rem;
 	position: relative;
@@ -75,9 +74,9 @@ h2:after {
 }
 .site-header span {
 	font-size: 3.6rem;
-	font-family: "Times New Roman";
+	/*font-family: "Times New Roman";
 	color: rgba(255, 255, 255, 0.702);
-	font-style: italic;
+	font-style: italic;*/
 }
 
 .section--cover a + p {
@@ -100,9 +99,9 @@ h2:after {
 	transition: all .4s ease-in-out;
 }
 
-.btn:hover,
-.btn:fosus,
-.btn:active {
+.btn::hover,
+.btn::fosus,
+.btn::active {
 	color: #000;
 	background-color: #fff;
 }
@@ -244,7 +243,75 @@ nav ul li {
 	opacity: .6;
 }
 
+.section--cuisine {
+}
+
+.section--cuisine>.container{
+	margin: 0;
+	padding: 0;
+	max-width: 1600px;
+	width: 100%;
+}
+
+.margin-container {
+	margin-top: 4.5rem;
+}
+
+.cuisines {
+	padding: 0;
+	font-size: 0;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.cuisine {
+	list-style: none;
+	background-color: #f57365;
+	width:20%;
+	overflow: hidden;
+	position: relative;
+} 
+
+.cuisine-center  {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+    top: 40%;
+    left: 36%;
+}
+
+.section--facts {
+	padding-top: 0;
+}
+
+.facts {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.fact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer {
+	background-color: #f7f7f7;
+}
 /* HELPERS */
 .text-center {
 	text-align: center;
 }
+
+.italic-text {
+	font-family: "Times New Roman";
+	color: rgba(255, 255, 255, 0.702);
+	font-style: italic;
+}
+
