@@ -1,4 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../fonts/lato-bold-webfont.woff') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('../fonts/lato-hairline-webfont.woff') format('woff2'),
+         url('../fonts/lato-hairline-webfont.woff2') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato Hairline Italic';
+    src: url('../fonts/lato-hairlineitalic-webfont.woff') format('woff2'),
+         url('../fonts/lato-hairlineitalic-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/lato-light-webfont.woff') format('woff2'),
+         url('../fonts/lato-light-webfont.woff2') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../fonts/lato-regular-webfont.woff') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 * {
 	box-sizing: border-box;
@@ -7,7 +51,7 @@
 html {
 	min-height: 100%;
 	font-size: 10px;
-	font-family: Lato, Arial , sans-serif;
+	font-family: 'Lato Regular', Arial , sans-serif;
 	color: #000000;
 }
 
@@ -39,16 +83,18 @@ h1{
 h2 {
 	font-size: 1.8rem;
 	position: relative;
+	font-family: 'Lato Bold'
 }
 
-h2:after { 
+h2::after { 
 	display: block;
 	content: "";
 	margin-top: .3em;
 	width: 4.8em;
     position: absolute;
-    left: 38%;
-	border-bottom: 2px solid #f57365;
+    left: 50%;
+    transform: translate(-50%, 0);
+	border-bottom: 1px solid #f57365;
 }
 
 
@@ -57,6 +103,7 @@ h2:after {
 }
 
 .section--cover {
+	padding-top: 22rem;
 	background-position: center;
 	background-size: cover;
 
@@ -73,14 +120,15 @@ h2:after {
 }
 .site-header span {
 	font-size: 3.6rem;
-	/*font-family: "Times New Roman";
-	color: rgba(255, 255, 255, 0.702);
-	font-style: italic;*/
 }
 
 .section--cover a + p {
 	font-size: 1.4rem;
 	margin-top: 0;
+}
+
+.section--cover ins {
+	font-family: 'Lato Bold';
 }
 
 .btn {
@@ -92,15 +140,16 @@ h2:after {
 	background-color: transparent;
 	border: 2px solid #fff;
 	padding: 2.5rem 8rem 3rem;
-	margin: 4em 0;
+	margin: 3em 0;
 	border-radius: .5rem;
 	line-height: 1;
 	transition: all .4s ease-in-out;
 }
 
-.btn::hover,
-.btn::fosus,
-.btn::active {
+
+.btn:hover,
+.btn:focus,
+.btn:active {
 	color: #000;
 	background-color: #fff;
 }
@@ -129,12 +178,15 @@ nav a {
 	transition: all .4s ease-in-out;
 }
 
+
+
 nav a:hover,
-nav a:fosus,
+nav a:focus,
 nav a:active {
-	font-size: 2rem;
-	border: 1px solid #000;
-	border-radius: .5rem;
+    
+    letter-spacing: 5px;
+   text-decoration: underline overline;
+	
 }
 
 nav ul  {
@@ -145,12 +197,14 @@ nav ul  {
 nav ul li {
 	display: inline-block;
 	margin-left: 1.9em;
+	font-family: 'Lato Bold';
 
 }
 
 .section--advantage {
+	font-family: 'Lato Light';
 	font-size: 1.6rem;
-	font-weight: 300;
+	
 }
 
 .advantages {
@@ -177,7 +231,7 @@ nav ul li {
 
 .section--app {
 	background-color: #f7f7f7;
-	padding-bottom: 0
+	padding-bottom: 0;
 }
 
 .container__app{
@@ -186,68 +240,56 @@ nav ul li {
 }
 
 .app__text {
-	font-weight: 300;
+	font-family: 'Lato Light';
 	text-align: left;
-	margin-top: 8rem;
-    margin-left: 13rem;
+	margin: 8rem 0 0 12rem;
 }
 
-.app__text img:last-child {
-	margin-left: 1.2em;
+.app__text img:nth-last-child(2) {
+	margin-right: 1.2em;
 }
 
 .section--slider {
 	position: relative;
 	background-color: #4a3949;
-	padding: 21rem 0 8rem 0;
 	color: #fff;
+	font-family: 'Lato Hairline';
 	font-size: 3rem;
-	font-weight: 300;
 }
 
-.slider__eclipse{
-	display: inline-block;
+
+.slider__photo {
+	border-radius: 50%;
+	border: 4px solid #958b94;
 }
 
-.slider__eclipse img {
-	position: absolute;
-	top: 8rem;
-	left: 45%;
-	margin: 0;
-    clip-path: ellipse(50px 50px at 39% 20%);
-}
-
-/*.slider-eclipse img:after {
-	content: "";
-  	position: absolute;
-  	background: #fff;
-  	border: 1px solid #fff;
-  	border-radius: 22%;
-}*/
 
 .slider__sign {
+	font-family: 'Lato Hairline Italic';
 	font-size: .6em;
 }
 
-.point {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-size: 10rem;
-	line-height: 10px;
-
+.point input[type="radio"] {
+    display:none; 
 }
 
-.point div:not(:first-child){
-	opacity: .6;
+label {
+    display:inline-block;
+    background-color:#bbb;
+    border-radius: 50%;
+    height: .4em;
+    width: .4em;
 }
 
+input[type="radio"]:checked + label { 
+    background-color:#ddd;
+
+}
 
 .section--cuisine>.container{
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	max-width: 1600px;
-	width: 100%;
 }
 
 .cuisines__container {
@@ -256,27 +298,39 @@ nav ul li {
 
 .cuisines {
 	padding: 0;
-	font-size: 0;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 0;
 
 }
 
 .cuisine {
 	list-style: none;
 	background-color: #f57365;
-	width:20%;
-	overflow: hidden;
 	position: relative;
+	color: #fff;
 } 
 
-.cuisine__center  {
+.cuisine img {
+	width: 100%;
+	height: 100%;
+}
+.cuisine-center {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-    top: 40%;
-    left: 36%;
+	transform: translate(-50%,-100%);
+    top: 60%;
+    left: 50%;
+    font-size: 1.6rem;
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+}
+
+.kitchen {
+	font-family: 'Lato Bold';
+	font-size: 3.6rem;
+
 }
 
 .section--facts {
@@ -296,15 +350,18 @@ nav ul li {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	font-family: Lato, Arial , sans-serif;
 }
 
 .fact__num {
-	font-size: 3.5em;
+	font-family: 'Lato Bold';
+	font-size: 2.3em;
 
 }
 
 .fact__text {
-	font-size: 1.13em;
+	font-family: 'Lato Light';
+	font-size: 1em;
 }
 footer {
 	background-color: #f7f7f7;
@@ -315,7 +372,23 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	font-family: 'Lato Light';
+	font-size: 1.4rem;
+	color: #8b8b8b;
+	opacity: .5;
 }
+.footer--container p:last-of-type{
+	text-transform: uppercase;
+	opacity: 1;
+	letter-spacing: 2px;
+}
+
+.footer--container a {
+	font-family: 'Lato Regular';
+	color: #000;
+	text-decoration: none;
+}
+
 /* HELPERS */
 .text-center {
 	text-align: center;
@@ -326,4 +399,3 @@ footer {
 	color: rgba(255, 255, 255, 0.702);
 	font-style: italic;
 }
-

@@ -9,8 +9,7 @@
 	<body>
 			<header>
 				<div class="container">
-					<a href="#" class="logo"><object type="image/svg+xml" data="img/logo.svg"></object><!-- <img src="img/logo.png" alt="logo"> --></a>
-
+					<a href="#" class="logo"><object type="image/svg+xml" data="img/logo.svg"></object></a>
 					<nav>
 						<ul>
 							<li><a href="#">LOG IN</a></li>
@@ -28,7 +27,7 @@
 							<h1>RECIPES</h1>
 						</div>
 						<a href="#" class="btn">GET STARTED</a>
-						<p>OR SEND US YOUR OWN RECIPES AND GET <ins>REWARDED</ins>!</p>
+						<p>OR SEND US YOUR OWN RECIPES AND <ins>GET REWARDED</ins>!</p>
 					</div>
 				</section>
 				<section class="section section--advantage text-center">
@@ -69,7 +68,7 @@
 					<div class="container container__app">
 						<img src="img/iphone.png" alt="iphone">
 						<div class="app__text">
-							<h2>INTRODUCING THE FUDI APP</h2>
+							<h2 class="app__header">INTRODUCING THE FUDI APP</h2>
 							<p>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet 
 							   felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
 							   ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
@@ -89,15 +88,22 @@
 				</section>
 				<section class="section section--slider text-center" style="background-image: url(img/slider-background-image.png); background-repeat: no-repeat;  background-position: center center; background-size: contain;">
 					<div class="container">
-						<div class="slider__eclipse"><img src="img/man.jpg" alt=""></div>
-						<p>“I am so happy because I found this recipe, and it just    		made my life easier.
+						<img src="img/man.png
+							" alt="" class="slider__photo">
+						<p >“I am so happy because I found this recipe, and it just    		made my life easier.
 						    Thanks  so much for sharing!”</p>
 						<span class="slider__sign">- Michael Dawson, San Francisco, CA -</span>
 
 						<div class="point">
-							<div>.</div>
-							<div>.</div>
-							<div>.</div>
+							 <input type="radio" id="radio1" name="radio" value="all" checked>
+    						<label for="radio1"></label>
+
+    						<input type="radio" id="radio2" name="radio"value="false">
+    						<label for="radio2"></label>
+
+    						<input type="radio" id="radio3" name="radio" value="true">
+    						<label for="radio3"></label> 
+							
 						</div>
 					</div>
 				</section>
@@ -140,9 +146,7 @@
 										<span class="recipe_num italic-text">731 Recipes</span>
 										<span class="kitchen">SEAFOOD</span>
 									</div>
-								</li>	
-												    </ul>	
-							<ul class="cuisines">
+								</li>							   
 								<li class="cuisine">
 									<img src="img/SUSHI.jpg" alt="">
 									<div class="cuisine-center">
