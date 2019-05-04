@@ -71,7 +71,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1600px;
 	width: 90%;
 	margin: 0 auto;
 	padding: 0 1.5rem;
@@ -345,6 +345,7 @@ input[type="radio"]:checked + label {
 
 .cuisines__container {
 	margin-top: 4.5rem;
+	max-width: 1600px;
 }
 
 .cuisines {
@@ -353,7 +354,7 @@ input[type="radio"]:checked + label {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0;
-	
+	justify-content: center;
 }
 
 .cuisine {
